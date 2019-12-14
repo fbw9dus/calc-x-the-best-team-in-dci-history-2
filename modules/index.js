@@ -1,4 +1,4 @@
-simport {calculateAspectRatio} from './aspect-ratio.js'
+import {calculateAspectRatio} from './aspect-ratio.js'
 import {modulo,percentage,percentageOf,difference} from  './percentage.js'
 
 document.addEventListener("keyup" , CalculateMePlease)
@@ -39,7 +39,8 @@ function  CalculateMePlease(){
            
            //2
            
-                 var originalWidth = document.querySelector('#ratio_1');
+                 
+           var originalWidth = document.querySelector('#ratio_1');
            var originalHeight = document.querySelector('#ratio_2');
            var ratioResultWidth = document.querySelector('#ratio_result-width');
            var ratioResultHeight = document.querySelector('#ratio_result-height');
